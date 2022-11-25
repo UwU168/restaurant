@@ -102,7 +102,7 @@ def print_restaurant(restaurant):
 def get_rating():
   rating = 0
   rating = v.get_integer("Enter a rating from 1-5: ")
-  if rating <1 or rating > 5:
+  while rating <1 or rating > 5:
     print("Invalid input.")
     rating = v.get_integer("Enter a rating from 1-5: ")
   else:
